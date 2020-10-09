@@ -10,7 +10,7 @@ public class DrawerEvent : MonoBehaviour
     public Camera cabinetCam;
     private bool activeMovement = false;
 
-    private bool isZoomed;
+    private bool isZoomed = false;
 
     private Vector3 targetPosition;
     private float Zmovement = -0.4f;
@@ -18,7 +18,6 @@ public class DrawerEvent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isZoomed = false;
         targetPosition = transform.position;
     }
 
@@ -29,19 +28,29 @@ public class DrawerEvent : MonoBehaviour
 
         if (isZoomed)
         {
+            targetPosition.z += Zmovement;
+            activeMovement = true;
+
             viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
             isZoomed = false;
-            targetPosition.z += Zmovement;
         }
         else
         {
-            yield return new WaitForSeconds(0.5f);
+            Debug.Log("Starting drawer movement");
+
+            targetPosition.z -= Zmovement;
+            activeMovement = true;
+
+            Debug.Log("Wait");
+
+            yield return new WaitForSeconds(1.5f);
+
+            Debug.Log("Now move camera");
+
             viewCam.GetComponent<CameraController>().setView(targetCam.transform);
             isZoomed = true;
-            targetPosition.z -= Zmovement;
 
         }
-        activeMovement = true;
     }
 
 

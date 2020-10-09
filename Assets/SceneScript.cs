@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SceneScript : MonoBehaviour
 {
@@ -8,17 +9,17 @@ public class SceneScript : MonoBehaviour
     public Camera drawerCam;
     public Camera cabinetCam;
 
-
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Started scene script 2!");
         viewCam.enabled = true;
         drawerCam.enabled = false;
         cabinetCam.enabled = false;
 
-        viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
+        //GameObject.Find("objectPanel").SetActive(false);
+        //Debug.Log("Panel is active : " + GameObject.Find("objectPanel").activeInHierarchy);
 
+        viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
 
     }
 
