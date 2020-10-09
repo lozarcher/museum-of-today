@@ -23,33 +23,37 @@ public class DrawerEvent : MonoBehaviour
 
     IEnumerator OnMouseDown()
     {
-        Debug.Log(this.gameObject.name + " was selected - on mouse down");
-        Vector3 currentPosition = this.gameObject.transform.position;
-
-        if (isZoomed)
+        Debug.Log("Active movement is " + activeMovement);
+        if (!activeMovement)
         {
-            targetPosition.z += Zmovement;
-            activeMovement = true;
+            Debug.Log(this.gameObject.name + " was selected - on mouse down");
+            Vector3 currentPosition = this.gameObject.transform.position;
 
-            viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
-            isZoomed = false;
-        }
-        else
-        {
-            Debug.Log("Starting drawer movement");
+            if (isZoomed)
+            {
+                targetPosition.z += Zmovement;
+                activeMovement = true;
 
-            targetPosition.z -= Zmovement;
-            activeMovement = true;
+                viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
+                isZoomed = false;
+            }
+            else
+            {
+                Debug.Log("Starting drawer movement");
 
-            Debug.Log("Wait");
+                targetPosition.z -= Zmovement;
+                activeMovement = true;
+                isZoomed = true;
 
-            yield return new WaitForSeconds(1.5f);
+                Debug.Log("Wait");
 
-            Debug.Log("Now move camera");
+                yield return new WaitForSeconds(1.5f);
 
-            viewCam.GetComponent<CameraController>().setView(targetCam.transform);
-            isZoomed = true;
+                Debug.Log("Now move camera");
 
+                viewCam.GetComponent<CameraController>().setView(targetCam.transform);
+
+            }
         }
     }
 
@@ -64,9 +68,16 @@ public class DrawerEvent : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 1);
         }
-        if (transform.position.Equals(targetPosition)) {
+
+        float dist = Vector3.Distance(targetPosition, transform.position);
+        const float absoluteDifference = 0.01f;
+        if (dist <= absoluteDifference)
+        {
             activeMovement = false;
         }
+        //if (transform.position.Equals(targetPosition)) {
+        //    activeMovement = false;
+        //}
     }
 
 }
