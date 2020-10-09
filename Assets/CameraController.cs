@@ -15,10 +15,10 @@ public class CameraController : MonoBehaviour
     public void setView(Transform newView)
     {
         currentView = newView;
-        Debug.Log("New View " + currentView.position.x + " " + currentView.position.y + " " + currentView.position.z);
-        Debug.Log("Transition speed " + transitionSpeed);
+        //Debug.Log("New View " + currentView.position.x + " " + currentView.position.y + " " + currentView.position.z);
+        //Debug.Log("Transition speed " + transitionSpeed);
 
-        Debug.Log("Set new view in camera controller");
+        //Debug.Log("Set new view in camera controller");
     }
 
     void LateUpdate()
@@ -26,9 +26,9 @@ public class CameraController : MonoBehaviour
         if (currentView != null)
         {
 
-            Debug.Log("Target View " + currentView.position.x + " " + currentView.position.y + " " + currentView.position.z);
+            //Debug.Log("Target View " + currentView.position.x + " " + currentView.position.y + " " + currentView.position.z);
 
-            Debug.Log("Transform "+transform.position.x + " " + transform.position.y + " " + transform.position.z);
+            //Debug.Log("Transform "+transform.position.x + " " + transform.position.y + " " + transform.position.z);
 
         //Lerp position
         transform.position = Vector3.Lerp(transform.position, currentView.position, Time.deltaTime * transitionSpeed);
@@ -39,6 +39,24 @@ public class CameraController : MonoBehaviour
             );
             transform.eulerAngles = currentAngle;
         }
-     
+
     }
+
+    // alternative way of detecting mouse clicks on objects, globally
+    // private void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    { // if left button pressed...
+    //        Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+    //        RaycastHit hit;
+    //        if (Physics.Raycast(ray, out hit))
+    //        {
+    //            Debug.Log("Detected HIT on "+hit.collider.gameObject);
+    //            //Debug.Log("Detected hit : " + hit.collider.gameObject.name.ToString);
+    //            // the object identified by hit.transform was clicked
+    //            // do whatever you want
+    //        }
+    //    }
+    //}
+
 }

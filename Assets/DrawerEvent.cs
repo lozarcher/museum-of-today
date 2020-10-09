@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ColliderScript : MonoBehaviour
+public class DrawerEvent : MonoBehaviour
 {
     public Camera targetCam;
     public Camera viewCam;
@@ -13,7 +13,7 @@ public class ColliderScript : MonoBehaviour
     private bool isZoomed;
 
     private Vector3 targetPosition;
-    private float Zmovement = -0.5f;
+    private float Zmovement = -0.4f;
 
     // Start is called before the first frame update
     void Start()
