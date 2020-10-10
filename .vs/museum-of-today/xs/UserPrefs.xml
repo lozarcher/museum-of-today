@@ -5,7 +5,7 @@
       <File FileName="Assets/ObjectEvent.cs" />
       <File FileName="Assets/DrawerEvent.cs" />
       <File FileName="Assets/SceneScript.cs" />
-      <File FileName="Assets/PopupMessage.cs" Line="35" Column="1" />
+      <File FileName="Assets/PopupMessage.cs" Line="65" Column="46" />
       <File FileName=".gitignore" />
       <File FileName="Assets/IMG2Sprite.cs" />
     </Files>

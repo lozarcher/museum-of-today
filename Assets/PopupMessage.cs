@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.Video;
 
 public class PopupMessage : MonoBehaviour
 {
 
     private const string imageUrlPrefix = "http://themuseumoftoday.org/wp-content/uploads/labels/large/";
+    private const string videoUrlPrefix = "http://themuseumoftoday.org/wp-content/uploads/videos/";
+
     private const string imageUrlSuffix = "_large.png";
+    private const string videoUrlSuffix = ".mp4";
 
 
     public GameObject ui;
@@ -48,14 +52,22 @@ public class PopupMessage : MonoBehaviour
     {
         ui.SetActive(!ui.activeSelf);
 
-        Text textObject = ui.gameObject.GetComponentInChildren<Text>();
-        textObject.text = message;
-
         string imageUrl = imageUrlPrefix + wonderId + imageUrlSuffix;
-        Debug.Log(imageUrl);
+        string videoUrl = videoUrlPrefix + wonderId + videoUrlSuffix;
+
+        Debug.Log("Image: "+imageUrl);
+        Debug.Log("Video: "+videoUrl);
+
+        
+
+        GameObject videoObject = GameObject.Find("Video Player");
+        VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
+        videoPlayer.source = VideoSource.Url;
+        videoPlayer.targetMaterialRenderer = GetComponent<Renderer>();
+        videoPlayer.url = videoUrl;
+        videoPlayer.Play();
 
         StartCoroutine(DownloadImage(imageUrl));
-        
 
     }
     public void Close()
