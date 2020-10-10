@@ -20,13 +20,19 @@ public class PopupMessage : MonoBehaviour
         
     }
 
-    public void Open(string message)
+    public void Open(string message, string wonderId)
     {
-        Text textObject = ui.gameObject.GetComponentInChildren<Text>();
-        textObject.text = message;
         ui.SetActive(!ui.activeSelf);
 
-        
+        Text textObject = ui.gameObject.GetComponentInChildren<Text>();
+        textObject.text = message;
+
+        GameObject labelObject = GameObject.Find("LabelImage");
+        Image labelImage = labelObject.GetComponentInChildren<Image>();
+
+        IMG2Sprite img2Sprite = new IMG2Sprite();
+        labelImage.overrideSprite = img2Sprite.LoadNewSprite("Assets/Large Labels/" + wonderId + "_large.png");
+
     }
     public void Close()
     {

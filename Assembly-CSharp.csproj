@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\DrawerEvent.cs" />
+    <Compile Include="Assets\IMG2Sprite.cs" />
     <Compile Include="Assets\ObjectEvent.cs" />
     <Compile Include="Assets\PopupMessage.cs" />
     <Compile Include="Assets\SceneScript.cs" />
