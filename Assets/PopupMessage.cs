@@ -16,6 +16,9 @@ public class PopupMessage : MonoBehaviour
 
 
     public GameObject ui;
+    private GameObject playButton;
+    private GameObject pauseButton;
+    private GameObject closeButton;
 
     // Start is called before the first frame update
     void Start()
@@ -57,8 +60,6 @@ public class PopupMessage : MonoBehaviour
 
         Debug.Log("Image: "+imageUrl);
         Debug.Log("Video: "+videoUrl);
-
-        
 
         GameObject videoObject = GameObject.Find("Video Player");
         VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
