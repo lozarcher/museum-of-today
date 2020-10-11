@@ -24,11 +24,13 @@ public class DrawerEvent : MonoBehaviour
     IEnumerator OnMouseDown()
     {
         Debug.Log("Active movement is " + activeMovement);
-        if (!activeMovement)
+
+        GameObject popupMessage = GameObject.Find("PopupMessage");
+
+        if (!activeMovement && popupMessage==null)
         {
             Debug.Log(this.gameObject.name + " was selected - on mouse down");
             Vector3 currentPosition = this.gameObject.transform.position;
-
             if (isZoomed)
             {
                 targetPosition.z += Zmovement;

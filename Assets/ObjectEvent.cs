@@ -23,9 +23,7 @@ public class ObjectEvent : MonoBehaviour
     {
         Debug.Log(this.gameObject.name + " object was selected - on mouse down");
 
-        if (popupMessage.IsActive()) {
-            popupMessage.Close();
-        } else { 
+        if (!popupMessage.IsActive()) {
             popupMessage.OpenAsync("You clicked " + this.gameObject.name, this.gameObject.name);
         }
         //PanelController panelController = GameObject.Find("objectPanel").GetComponent<PanelController>();

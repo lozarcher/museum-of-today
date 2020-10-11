@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 
 public class CloseButton : MonoBehaviour
 {
@@ -14,5 +16,14 @@ public class CloseButton : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnMouseDown()
+    {
+        Debug.Log("CLOSE pressed");
+        GameObject cabinetObject = GameObject.Find("cabinetObject");
+        PopupMessage popupMessage = cabinetObject.GetComponent<PopupMessage>();
+
+        popupMessage.Close();
     }
 }

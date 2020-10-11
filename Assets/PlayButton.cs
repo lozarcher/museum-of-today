@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Video;
 
 public class PlayButton : MonoBehaviour
@@ -19,8 +20,10 @@ public class PlayButton : MonoBehaviour
 
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
+        Debug.Log("PLAY pressed");
+
         VideoPlayer videoPlayer = videoPlayerObject.GetComponent<VideoPlayer>();
         if (!videoPlayer.isPlaying)
         {
