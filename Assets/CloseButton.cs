@@ -18,7 +18,7 @@ public class CloseButton : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    public void ButtonClicked()
     {
         Debug.Log("CLOSE pressed");
         GameObject cabinetObject = GameObject.Find("cabinetObject");

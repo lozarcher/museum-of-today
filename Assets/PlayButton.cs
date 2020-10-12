@@ -6,12 +6,12 @@ using UnityEngine.Video;
 
 public class PlayButton : MonoBehaviour
 {
-    public GameObject videoPlayerObject;
+    private GameObject videoPlayerObject;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        videoPlayerObject = GameObject.Find("Video Player");
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class PlayButton : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void ButtonClicked()
     {
         Debug.Log("PLAY pressed");
 

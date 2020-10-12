@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{0B7DAE47-3E3C-2C9F-172E-11BBCEF0A49D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CloseButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayButton.cs">
     <Files>
-      <File FileName="Assets/CameraController.cs" Line="21" Column="58" />
-      <File FileName="Assets/ObjectEvent.cs" Line="8" Column="1" />
-      <File FileName="Assets/DrawerEvent.cs" />
-      <File FileName="Assets/SceneScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/PopupMessage.cs" Line="8" Column="26" />
+      <File FileName="Assets/DrawerEvent.cs" Line="21" Column="26" />
+      <File FileName="Assets/CameraController.cs" />
+      <File FileName="Assets/ObjectEvent.cs" Line="28" Column="10" />
+      <File FileName="Assets/SceneScript.cs" />
       <File FileName=".gitignore" />
       <File FileName="Assets/IMG2Sprite.cs" />
-      <File FileName="Assets/PauseButton.cs" Line="22" Column="21" />
-      <File FileName="Assets/PlayButton.cs" Line="27" Column="32" />
-      <File FileName="Assets/CloseButton.cs" Line="21" Column="14" />
+      <File FileName="Assets/PauseButton.cs" Line="32" Column="1" />
+      <File FileName="Assets/PlayButton.cs" Line="23" Column="9" />
+      <File FileName="Assets/CloseButton.cs" Line="29" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +18,7 @@
             <Node name="Solution Items" expanded="True" />
             <Node name="Assets" expanded="True">
               <Node name="Drawer labels" expanded="True" />
-              <Node name="CloseButton.cs" selected="True" />
+              <Node name="PlayButton.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f9dc3432-fb47-499a-8a57-935c919680f5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e2e3d0f-4173-450e-b1d3-6990cde21e60" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
