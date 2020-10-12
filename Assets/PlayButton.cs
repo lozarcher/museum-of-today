@@ -25,9 +25,7 @@ public class PlayButton : MonoBehaviour
         Debug.Log("PLAY pressed");
 
         VideoPlayer videoPlayer = videoPlayerObject.GetComponent<VideoPlayer>();
-        if (!videoPlayer.isPlaying)
-        {
-            videoPlayer.Play();
-        }
+        videoPlayer.Stop();
+        videoPlayer.Play();
     }
 }

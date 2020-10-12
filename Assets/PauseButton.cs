@@ -27,6 +27,9 @@ public class PauseButton : MonoBehaviour
         if (videoPlayer.isPlaying)
         {
             videoPlayer.Pause();
+        } else
+        {
+            videoPlayer.Play();
         }
     }
 }
