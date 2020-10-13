@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{0B7DAE47-3E3C-2C9F-172E-11BBCEF0A49D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CameraController.cs">
     <Files>
       <File FileName="Assets/DrawerEvent.cs" Line="21" Column="26" />
-      <File FileName="Assets/CameraController.cs" />
-      <File FileName="Assets/ObjectEvent.cs" Line="28" Column="10" />
+      <File FileName="Assets/CameraController.cs" Line="11" Column="61" />
+      <File FileName="Assets/ObjectEvent.cs" Line="15" Column="18" />
       <File FileName="Assets/SceneScript.cs" />
       <File FileName=".gitignore" />
       <File FileName="Assets/IMG2Sprite.cs" />
-      <File FileName="Assets/PauseButton.cs" Line="32" Column="1" />
-      <File FileName="Assets/PlayButton.cs" Line="23" Column="9" />
-      <File FileName="Assets/CloseButton.cs" Line="29" Column="1" />
+      <File FileName="Assets/PauseButton.cs" />
+      <File FileName="Assets/PlayButton.cs" Line="30" Column="1" />
+      <File FileName="Assets/CloseButton.cs" Line="18" Column="9" />
+      <File FileName="Assets/PopupMessage.cs" Line="18" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,7 @@
             <Node name="Solution Items" expanded="True" />
             <Node name="Assets" expanded="True">
               <Node name="Drawer labels" expanded="True" />
-              <Node name="PlayButton.cs" selected="True" />
+              <Node name="CameraController.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -27,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e2e3d0f-4173-450e-b1d3-6990cde21e60" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6a610e20-767a-474c-830b-773db0559ab1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
