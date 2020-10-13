@@ -16,10 +16,7 @@ public class SceneScript : MonoBehaviour
         drawerCam.enabled = false;
         cabinetCam.enabled = false;
 
-        //GameObject.Find("objectPanel").SetActive(false);
-        //Debug.Log("Panel is active : " + GameObject.Find("objectPanel").activeInHierarchy);
-
-        viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
+        viewCam.GetComponent<CameraController>().setView(cabinetCam.transform, 0.15f);
 
     }
 

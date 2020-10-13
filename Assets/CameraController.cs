@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float transitionSpeed;
+    private float transitionSpeed;
     Transform currentView;
 
     //Unused, for mouselook
@@ -20,9 +20,10 @@ public class CameraController : MonoBehaviour
     {
     }
 
-    public void setView(Transform newView)
+    public void setView(Transform newView, float transitionSpeed)
     {
         currentView = newView;
+        this.transitionSpeed = transitionSpeed;
         //currentlyMoving = true;
     }
 

@@ -36,7 +36,7 @@ public class DrawerEvent : MonoBehaviour
                 targetPosition.z += Zmovement;
                 activeMovement = true;
 
-                viewCam.GetComponent<CameraController>().setView(cabinetCam.transform);
+                viewCam.GetComponent<CameraController>().setView(cabinetCam.transform, 1.0f);
                 isZoomed = false;
             }
             else
@@ -53,7 +53,7 @@ public class DrawerEvent : MonoBehaviour
 
                 Debug.Log("Now move camera");
 
-                viewCam.GetComponent<CameraController>().setView(targetCam.transform);
+                viewCam.GetComponent<CameraController>().setView(targetCam.transform, 1.0f);
 
             }
         }
