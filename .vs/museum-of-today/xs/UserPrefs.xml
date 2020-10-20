@@ -1,25 +1,24 @@
 ﻿<Properties StartupConfiguration="{0B7DAE47-3E3C-2C9F-172E-11BBCEF0A49D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DrawerEvent.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CloseButton.cs">
     <Files>
-      <File FileName="Assets/DrawerEvent.cs" Line="17" Column="1" />
-      <File FileName="Assets/CameraController.cs" />
-      <File FileName="Assets/ObjectEvent.cs" />
-      <File FileName="Assets/SceneScript.cs" Line="26" Column="9" />
-      <File FileName=".gitignore" />
-      <File FileName="Assets/IMG2Sprite.cs" />
-      <File FileName="Assets/PauseButton.cs" />
-      <File FileName="Assets/PlayButton.cs" />
-      <File FileName="Assets/CloseButton.cs" />
-      <File FileName="Assets/PopupMessage.cs" />
+      <File FileName="Assets/Scripts/DrawerEvent.cs" Line="57" Column="1" />
+      <File FileName="Assets/Scripts/IMG2Sprite.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CloseButton.cs" Line="25" Column="24" />
+      <File FileName="Assets/Scripts/TooltipPopup.cs" Line="58" Column="9" />
+      <File FileName="Assets/Scripts/PopupMessage.cs" Line="23" Column="19" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SceneScript.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/ObjectEvent.cs" Line="15" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="museum-of-today" expanded="True">
-            <Node name="Solution Items" expanded="True" />
             <Node name="Assets" expanded="True">
-              <Node name="Drawer labels" expanded="True" />
-              <Node name="DrawerEvent.cs" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="CloseButton.cs" selected="True" />
+              </Node>
+              <Node name="TextMesh Pro" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7ec3d6bd-50ea-45da-8358-a83978e7669c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7c4704f6-e970-4d7d-baae-f8bdd6123ef0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
