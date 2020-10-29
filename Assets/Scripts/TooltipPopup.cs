@@ -53,7 +53,7 @@ public class TooltipPopup : MonoBehaviour
     {
         StringBuilder builder = new StringBuilder();
 
-        builder.Append("<size=35>"+ tooltip + "</size>").AppendLine();
+        builder.Append("<size=35>"+ tooltip + " </size>").AppendLine();
         
         infoText.text = builder.ToString();
 

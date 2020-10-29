@@ -2132,6 +2132,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2471403536785970825, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471403536785970829, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: m_ChildForceExpandWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471403536785970829, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471403536785970829, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823367092065860438, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: padding
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823367092065860438, guid: 599fc18ab47d2de4f944bc0b111cfb77,
+        type: 3}
+      propertyPath: offset.y
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5056369616310407387, guid: 599fc18ab47d2de4f944bc0b111cfb77,
         type: 3}
       propertyPath: m_ReferencePixelsPerUnit
