@@ -29,7 +29,7 @@ public class DrawerEvent : MonoBehaviour
     {
         Debug.Log("Active movement is " + activeMovement);
 
-        GameObject popupMessage = GameObject.Find("PopupMessage");
+        GameObject popupMessage = GameObject.Find("ItemDetailsPanel");
 
         if (!activeMovement && popupMessage==null)
         {
