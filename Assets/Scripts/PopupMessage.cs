@@ -58,16 +58,17 @@ public class PopupMessage : MonoBehaviour
         Debug.Log("Image: "+imageUrl);
         Debug.Log("Video: "+videoUrl);
 
+        StartCoroutine(DownloadImage(imageUrl));
+
         GameObject videoObject = GameObject.Find("Video Player");
         VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
         videoPlayer.source = VideoSource.Url;
         videoPlayer.targetMaterialRenderer = GetComponent<Renderer>();
         videoPlayer.url = videoUrl;
         videoPlayer.Play();
-
-        StartCoroutine(DownloadImage(imageUrl));
-
+        videoPlayer.SetDirectAudioMute(0, false);
     }
+
     public void Close()
     {
         ui.SetActive(!ui.activeSelf);

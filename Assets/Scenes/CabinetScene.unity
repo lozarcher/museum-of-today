@@ -1091,7 +1091,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &729660844
@@ -21331,6 +21331,7 @@ GameObject:
   - component: {fileID: 5113572475957106726}
   - component: {fileID: 716224058191049335}
   - component: {fileID: 7840855621744004118}
+  - component: {fileID: 8357491609090068865}
   m_Layer: 0
   m_Name: key
   m_TagString: Untagged
@@ -21338,6 +21339,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8357491609090068865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357491609090068864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393f701ed86ac48d391a4686d0bde8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &8360177579950141091
 MeshRenderer:
   m_ObjectHideFlags: 0

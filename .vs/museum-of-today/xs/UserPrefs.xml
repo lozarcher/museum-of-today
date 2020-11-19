@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{0B7DAE47-3E3C-2C9F-172E-11BBCEF0A49D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DrawerEvent.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PopupMessage.cs">
     <Files>
       <File FileName="Assets/Scripts/IMG2Sprite.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CloseButton.cs" />
       <File FileName="Assets/Scripts/TooltipPopup.cs" />
-      <File FileName="Assets/Scripts/PopupMessage.cs" />
+      <File FileName="Assets/Scripts/PopupMessage.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CameraController.cs" />
-      <File FileName="Assets/Scripts/SceneScript.cs" />
+      <File FileName="Assets/Scripts/SceneScript.cs" Line="20" Column="1" />
       <File FileName="Assets/Scripts/ObjectEvent.cs" />
-      <File FileName="Assets/Scripts/DrawerEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DrawerEvent.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
           <Node name="museum-of-today" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DrawerEvent.cs" selected="True" />
+                <Node name="IMG2Sprite.cs" selected="True" />
               </Node>
               <Node name="TextMesh Pro" expanded="True" />
             </Node>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="361400ac-53a2-453c-8dc8-b4fc124b9dce" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d39ecea9-fd5c-4078-9c0f-8a9cfddb946d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
