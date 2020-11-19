@@ -4,7 +4,7 @@
       <File FileName="Assets/Scripts/IMG2Sprite.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/CloseButton.cs" />
       <File FileName="Assets/Scripts/TooltipPopup.cs" />
-      <File FileName="Assets/Scripts/PopupMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PopupMessage.cs" Line="69" Column="50" />
       <File FileName="Assets/Scripts/CameraController.cs" />
       <File FileName="Assets/Scripts/SceneScript.cs" Line="20" Column="1" />
       <File FileName="Assets/Scripts/ObjectEvent.cs" />
@@ -13,11 +13,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="museum-of-today" expanded="True">
+          <Node name="museum-of-today" expanded="True" selected="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="IMG2Sprite.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
               <Node name="TextMesh Pro" expanded="True" />
             </Node>
           </Node>
