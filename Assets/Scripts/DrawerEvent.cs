@@ -81,9 +81,6 @@ public class DrawerEvent : MonoBehaviour
         {
             activeMovement = false;
         }
-        //if (transform.position.Equals(targetPosition)) {
-        //    activeMovement = false;
-        //}
     }
 
     public void OnMouseOver()

@@ -8,13 +8,26 @@ public class ObjectEvent : MonoBehaviour
 
     private GameObject cabinetObject;
     private PopupMessage popupMessage;
+    private static float movementTransitionSpeed = 1f;
+    private static float scaleTransitionSpeed = 0.05f;
+
+    private static float raiseAmount = 0.05f;
+
+    private static float scaleAmount = 1.1f;
+    private Vector3 targetScale;
+    private static Vector3 originalScale = new Vector3(1.0f, 1.0f, 1.0f);
+
+    private float targetY, originalY;
+    private bool objectFloating = false;
 
     // Start is called before the first frame update
     void Start()
     {
         cabinetObject = GameObject.Find("cabinetObject");
         popupMessage = cabinetObject.GetComponent<PopupMessage>();
-
+        targetY = transform.position.y;
+        originalY = transform.position.y;
+        targetScale = originalScale;
     }
 
 
@@ -26,10 +39,6 @@ public class ObjectEvent : MonoBehaviour
         if (!popupMessage.IsActive()) {
             popupMessage.OpenAsync("You clicked " + this.gameObject.name, this.gameObject.name);
         }
-        //PanelController panelController = GameObject.Find("objectPanel").GetComponent<PanelController>();
-        //panelController.toggleVisibility();
-        //GameObject.Find("objectPanel").SetActive(true);
-        //Debug.Log("Panel is active : "+GameObject.Find("objectPanel").activeInHierarchy);
 
     }
 
@@ -37,22 +46,37 @@ public class ObjectEvent : MonoBehaviour
     {
         GameObject thisObject = this.gameObject;
         MeshRenderer meshRenderer = thisObject.GetComponent<MeshRenderer>();
-        meshRenderer.receiveShadows = false;
+        if (!objectFloating)
+        {
+            targetY = originalY + raiseAmount;
+            targetScale = new Vector3(scaleAmount, 1.0f, scaleAmount);
+            objectFloating = true;
+        }
+
     }
     void OnMouseExit()
     {
         GameObject thisObject = this.gameObject;
         MeshRenderer meshRenderer = thisObject.GetComponent<MeshRenderer>();
-        meshRenderer.receiveShadows = true;
+        if (objectFloating)
+        {
+            targetY = originalY;
+            targetScale = originalScale;
+
+            objectFloating = false;
+        }
     }
 
-    void Update()
+    void LateUpdate()
     {
-    }
+         transform.position =
+            Vector3.Lerp(
+                new Vector3(transform.position.x, transform.position.y, transform.position.z),
+                new Vector3(transform.position.x, targetY, transform.position.z),
+                Time.deltaTime * movementTransitionSpeed);
 
-    private void LateUpdate()
-    {
-        
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, scaleTransitionSpeed);
+
     }
 
 }
