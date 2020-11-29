@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using UnityEngine.Video;
+using System;
 
 public class PopupMessage : MonoBehaviour
 {
@@ -52,6 +53,10 @@ public class PopupMessage : MonoBehaviour
     {
         ui.SetActive(!ui.activeSelf);
 
+        GameObject videoObject = GameObject.Find("Video Player");
+        VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
+        videoPlayer.frame = 0;
+
         string imageUrl = imageUrlPrefix + wonderId + imageUrlSuffix;
         string videoUrl = videoUrlPrefix + wonderId + videoUrlSuffix;
 
@@ -60,17 +65,27 @@ public class PopupMessage : MonoBehaviour
 
         StartCoroutine(DownloadImage(imageUrl));
 
-        GameObject videoObject = GameObject.Find("Video Player");
-        VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
+
         videoPlayer.source = VideoSource.Url;
         videoPlayer.targetMaterialRenderer = GetComponent<Renderer>();
         videoPlayer.url = videoUrl;
         videoPlayer.Play();
-        videoPlayer.SetDirectAudioMute(0, false);
+        //Invoke(nameof(unMute), 3); 
     }
+
+    //void unMute()
+    //{
+    //    GameObject videoObject = GameObject.Find("Video Player");
+    //    VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
+    //    videoPlayer.SetDirectAudioMute(0, false);
+    //}
 
     public void Close()
     {
+        GameObject videoObject = GameObject.Find("Video Player");
+        VideoPlayer videoPlayer = videoObject.GetComponent<VideoPlayer>();
+
+        videoPlayer.frame = 0;
         ui.SetActive(!ui.activeSelf);
         if (!ui.activeSelf)
         {

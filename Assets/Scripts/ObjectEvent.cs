@@ -33,6 +33,18 @@ public class ObjectEvent : MonoBehaviour
 
     }
 
+    void OnMouseOver()
+    {
+        GameObject thisObject = this.gameObject;
+        MeshRenderer meshRenderer = thisObject.GetComponent<MeshRenderer>();
+        meshRenderer.receiveShadows = false;
+    }
+    void OnMouseExit()
+    {
+        GameObject thisObject = this.gameObject;
+        MeshRenderer meshRenderer = thisObject.GetComponent<MeshRenderer>();
+        meshRenderer.receiveShadows = true;
+    }
 
     void Update()
     {

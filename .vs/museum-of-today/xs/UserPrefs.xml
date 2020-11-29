@@ -1,21 +1,24 @@
 ﻿<Properties StartupConfiguration="{0B7DAE47-3E3C-2C9F-172E-11BBCEF0A49D}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PopupMessage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraController.cs">
     <Files>
       <File FileName="Assets/Scripts/IMG2Sprite.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CloseButton.cs" />
+      <File FileName="Assets/Scripts/CloseButton.cs" Line="25" Column="24" />
       <File FileName="Assets/Scripts/TooltipPopup.cs" />
-      <File FileName="Assets/Scripts/PopupMessage.cs" Line="69" Column="50" />
-      <File FileName="Assets/Scripts/CameraController.cs" />
-      <File FileName="Assets/Scripts/SceneScript.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/ObjectEvent.cs" />
-      <File FileName="Assets/Scripts/DrawerEvent.cs" />
+      <File FileName="Assets/Scripts/PopupMessage.cs" Line="59" Column="1" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SceneScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ObjectEvent.cs" Line="38" Column="25" />
+      <File FileName="Assets/Scripts/DrawerEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayButton.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="museum-of-today" expanded="True" selected="True">
+          <Node name="museum-of-today" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="CameraController.cs" selected="True" />
+              </Node>
               <Node name="TextMesh Pro" expanded="True" />
             </Node>
           </Node>
@@ -25,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d39ecea9-fd5c-4078-9c0f-8a9cfddb946d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5effacc6-973b-4552-84e2-375562879a64" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
